@@ -15,4 +15,8 @@ tmux:  ## start tmux
 SRC_DIR=$(SCRIPT_DIR)/example1
 
 protoc_example1:  ## generate Python code for example1
+	# ./protobuf/bin/protoc -I $(SRC_DIR) --python_out=$(SRC_DIR) $(SRC_DIR)/addressbook.proto
 	./protobuf/bin/protoc -I $(SRC_DIR) --python_out=$(SRC_DIR) $(SRC_DIR)/addressbook.proto
+
+python_example1:  ## run Python code for example1
+	python $(SCRIPT_DIR)/example1/proto-python-example1.py

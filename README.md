@@ -27,6 +27,14 @@ popd
 4. Display the version of the protocol compiler
 ./protobuf/bin/protoc --version
 
+## Protobuf Python example1
+
+1. Generate python code for protobuf example1
+make protoc_exmaple1
+
+2. Run the example
+python example1/proto-python-example1
+
 ## Links
 
 * [Protocol buffers][1000] documentation
@@ -40,5 +48,9 @@ popd
 * Using [Protobuf from Python][1020]
 
 [1020]: https://developers.google.com/protocol-buffers/docs/pythontutorial
+
+* [Comments from a proto][1030] file
+
+[1030]: https://stackoverflow.com/questions/32742601/reading-comments-from-proto-files-using-a-protocol-buffers-descriptor-object
 
 
